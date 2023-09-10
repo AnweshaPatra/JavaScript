@@ -26,6 +26,26 @@ console.log(obj["details"]()); // This will now return an array with the values.
 // Deleting 
 // delete obj.objectName ; OR delete obj["objectName"] ;
 
-
+// Implicit Type Coercion: Implicit type coercion in javascript is the automaticconversion of value from one data type to another. It takes place when the operands of an expression are of different data types.
+// JavaScript evaluates data from left to the right.
 console.log(1 + '1')
 console.log(1 - '1')
+let x1 = 5 + 4 + "Birds"
+console.log(x1)
+let x2 = "Birds" + 5 + 4 
+console.log(x2)
+
+// Automatic Type Conversion : While doing operations on two Strings, sometimes it automatically converts them to Number for the desired output.
+let x = "10"; let y = "2"; let z = x / y ; console.log(z);
+
+// Block vs Function Scope
+{
+    var i = "Bird"
+}
+
+function fun() {
+    var i = "Cow"
+    console.log(i) // Prints Cow upon function call
+}
+fun()
+console.log(i) // Prints Bird
