@@ -8,3 +8,17 @@ const val = 10; // Declare a constant variable named 'flag' and assign it the va
 //const flag = 20; // This will result in a SyntaxError: Identifier 'flag' has already been declared.
 //flag = 20; // This will result in a TypeError: Assignment to constant variable.
 console.log(flag, temp, val)
+
+// Object cration 
+var obj = {
+    'a': 1,
+    10: "bird",
+    "details": function() {
+        var name = "John Doe";
+        var age = 35;
+        return [name, age];
+    }
+};
+
+console.log(obj[10], obj.a);
+console.log(obj["details"]()); // This will now return an array with the values.
