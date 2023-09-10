@@ -22,3 +22,10 @@ var obj = {
 
 console.log(obj[10], obj.a);
 console.log(obj["details"]()); // This will now return an array with the values.
+
+// Deleting 
+// delete obj.objectName ; OR delete obj["objectName"] ;
+
+
+console.log(1 + '1')
+console.log(1 - '1')
